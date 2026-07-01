@@ -54,3 +54,21 @@ wishlistBtn.addEventListener("click", function() {
     wishlistList.appendChild(li);
     wishlistInput.value = "";
 });
+
+
+const  requestForm = document.getElementById("book-request");
+const formFeedback = document.getElementById("form-feedback");
+
+requestForm.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    const  name = document.getElementById("name-request").value;
+    const book =document.getElementById("book-request").value;
+
+    if(name === "" || book === ""){
+        formFeedback.textContent = "Please fill in all the fields";
+    }else{
+        formFeedback.textContent = "Thank you" + name + "Your pre-order has been placed"
+    }
+
+});
