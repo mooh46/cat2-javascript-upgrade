@@ -23,3 +23,34 @@ featuredBooks.forEach(function(book){
     
 
 });
+
+
+// Add and remove wishlist 
+//so first we get the elements on the page by their id
+const wishlistInput = document.getElementById("wishlist-input");
+const wishlistBtn = document.getElementById("wishlist-btn");
+const wishlistList = document.getElementById("wishlist-list");
+
+//adding an event listener which tells us when the button is clicked
+wishlistBtn.addEventListener("click", function() {
+    // i am assigning whatvere the user type in to a variable
+    const value = wishlistInput.value;
+    
+    if (value === "") return;
+
+    //here we create a new list item
+    const li = document.createElement("li");
+    //put whatever the user typed into that list item
+    li.textContent = value;
+
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "Remove";
+
+    removeBtn.addEventListener("click", function() {
+        li.remove();
+    });
+
+    li.appendChild(removeBtn);
+    wishlistList.appendChild(li);
+    wishlistInput.value = "";
+});
