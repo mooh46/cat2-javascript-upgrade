@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #333333; 
+    background-color: #333333;
     color: #2c2c2c;
     line-height: 1.5;
 }
@@ -10,15 +10,28 @@ body {
 
 
 .Home {
-    background-color: #f3e5f5; 
+    background-color: #f3e5f5;
     text-align: center;
-    padding: 0 0 3rem 0;       
+    padding: 0 0 3rem 0;
+}
+
+.dark-mode {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.dark-mode section,
+.dark-mode header,
+.dark-mode footer {
+    background-color: #1a1a1a;
 }
 
 
+
+
 .hero-logo {
-    width: 100%;               
-    height: auto;              
+    width: 100%;
+    height: auto;
     display: block;
     margin-bottom: 2rem;
 }
@@ -51,7 +64,7 @@ body {
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: all 0.2s ease; 
+    transition: all 0.2s ease;
 }
 
 .Home nav a:hover {
@@ -60,9 +73,9 @@ body {
 }
 
 section {
-    background-color: #f3e5f5; 
+    background-color: #f3e5f5;
     padding: 2rem 5%;
-    margin-top: 50px;          
+    margin-top: 50px;
     padding-bottom: 40px;
 }
 
@@ -81,13 +94,13 @@ section h2 {
 }
 
 .book-card {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     padding: 1.2rem;
     border: 1px solid #dcdcdc;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
-    transition: transform 0.2s ease; 
+    transition: transform 0.2s ease;
 }
 
 
@@ -117,21 +130,21 @@ section h2 {
 
 .book-card p:last-child {
     font-weight: bold;
-    color: #b8860b; 
+    color: #b8860b;
 }
 
 footer {
     text-align: center;
     padding: 2.5rem 1rem;
-    background-color: #f3e5f5; 
+    background-color: #f3e5f5;
     color: #2c2c2c;
-    margin-top: 50px;          
+    margin-top: 50px;
 }
 
 
 @media (max-width: 768px) {
     .book-grid {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 1.2rem; 
+        gap: 1.2rem;
     }
 }
