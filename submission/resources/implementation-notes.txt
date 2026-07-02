@@ -1,0 +1,16 @@
+1- LOOP RENDERED DYNAMIC CONTENT
+So for i used java script to store the data for the books that fell under the featured section part of my page. So  i stored the details in an array of objects as you will see then loop through them to display the books uisng and anonymous function 
+
+2- ADD AND REMOVE ITEMS
+ I  created a wish list where a user would type in books they would love to buy or see sold by us - so for this one what i did was add an eventlistener to the add button i had made in the wishlist section in my index.html file and for this what i did was just create and anonymous function that stored the value the user inputted in a variable called value and chekced if the it is empty if it was nothing would happen if the user actually did put in something a lost item would be created then the whatever the user typed in would be put in that list item and i also used java script to create a button next to whatver the list item and the function of this button is to remove the item if the user clicked it
+
+3-PRE-ORDER SECTION FORM
+I also made a pre order form, so here the user would type in the books they would love to buy or pre-order i didnt really implement an actual pre order form but it is a form and instead sayign it is feedback form i juts thought pre-ordr would be abit different so fot this one, i did the  same thing as all the others i used java script to locate the element id for that section and the input fields  stored the user input into variables checked if there was nothing typed, if so i used java script to display a certain text if not it diplayed another thing
+
+
+
+4-LOCALSTORAGE
+i also made a  dark mode button that turn the page dark and for this it is self explanatory, the only part of the implementation i would like to mention is the part i didnt use in the all the above parts, i used the classlist property which has a toggle method inside which  adds and removes the classlist property from the body element so this is what actually turns the page light and dark of course and along with other css additon that changed the colour form light to dark, so i basically that just used toggle to add and/ or  remove the classlist property and the css is what obviously changes the colour then to prevent this from changing when i refrehs the page i used local storge which just stores last state of a site
+
+5- BANNER REVEAL
+and for the last implementaion i used toggle again which allowed some text show or be hidden when banner is clicked and also i attached an event listener to the tag and which facilitated this.
