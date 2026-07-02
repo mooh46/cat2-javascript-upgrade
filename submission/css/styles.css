@@ -148,3 +148,11 @@ footer {
         gap: 1.2rem;
     }
 }
+
+#paragraph-banner {
+    display: none;
+}
+
+#paragraph-banner.visible {
+    display: block;
+}

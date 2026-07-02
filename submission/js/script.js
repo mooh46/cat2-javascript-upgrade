@@ -100,3 +100,15 @@ if (savedTheme === "dark") {
 } else {
     document.body.classList.remove("dark-mode");
 };
+
+
+const bann = document.getElementById("banner");
+const phrase = document.getElementById("paragraph-banner");
+
+bann.addEventListener("click", function(){
+    phrase.classList.toggle("visible");
+    phrase.style.color ="purple";
+
+    
+
+});
